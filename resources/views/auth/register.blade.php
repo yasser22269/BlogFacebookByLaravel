@@ -122,9 +122,7 @@
         </div>
     </div>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>___scripts_1___
     <script src="{{asset('/front/')}}/js/script.js"></script>
-   
 </body>
 
 </html>
