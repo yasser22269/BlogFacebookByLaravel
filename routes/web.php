@@ -14,7 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['middleware' => ['auth']], function() {
+    /**
+    * Logout Route
+    */
+    Route::get('/logoutWeb', [App\Http\Controllers\HomeController::class, 'logoutWeb'])->name('logoutWeb');
 
+ });
 
 Auth::routes();
 

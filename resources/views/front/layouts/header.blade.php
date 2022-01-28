@@ -45,7 +45,10 @@
 						<li><a href="index2.html" title="">Home Social 2</a></li>
 						<li><a href="index-company.html" title="">Home Company</a></li>
 						<li><a href="landing.html" title="">Login page</a></li>
-						<li><a href="logout.html" title="">Logout Page</a></li>
+						<li>
+              <a href="{{ route('logoutWeb') }}"> Logout</a>
+                        
+                        </li>
 						<li><a href="newsfeed.html" title="">news feed</a></li>
 					</ul>
 				</li>
@@ -221,7 +224,9 @@
 						<li><a href="index2.html" title="">Home Social 2</a></li>
 						<li><a href="index-company.html" title="">Home Company</a></li>
 						<li><a href="landing.html" title="">Login page</a></li>
-						<li><a href="logout.html" title="">Logout Page</a></li>
+						<li>           
+                               <a href="{{ route('logoutWeb') }}"> Logout</a>
+                        </li>
 						<li><a href="newsfeed.html" title="">news feed</a></li>
 					</ul>
 				</li>
@@ -428,7 +433,7 @@
 					<a href="#" title=""><i class="ti-pencil-alt"></i>edit profile</a>
 					<a href="#" title=""><i class="ti-target"></i>activity log</a>
 					<a href="#" title=""><i class="ti-settings"></i>account setting</a>
-					<a href="#" title=""><i class="ti-power-off"></i>log out</a>
+					<a href="{{ route('logoutWeb') }}" title=""><i class="ti-power-off"></i>log out</a>
 				</div>
 			</div>
 		</div>
