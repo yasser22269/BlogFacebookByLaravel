@@ -49,6 +49,21 @@
                                         </span>
                                     @enderror
                                 </div>
+
+                                <div class="form-group">
+                                    <input id="user_name" type="text"
+                                     class=" @error('user_name') is-invalid @enderror"
+                                      name="user_name" value="{{ old('user_name') }}"
+                                        autocomplete="user_name" autofocus>
+                                    <label class="control-label" for="input">User Name</label><i
+                                        class="mtrl-select"></i>
+                                        @error('user_name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+
                                 <div class="form-group">
                                     <input id="email" type="email" class=" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" autofocus>
                                     <label class="control-label" for="input">Email</label><i

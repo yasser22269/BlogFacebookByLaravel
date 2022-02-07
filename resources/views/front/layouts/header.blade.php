@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{asset('/front/')}}/css/style.css">
     <link rel="stylesheet" href="{{asset('/front/')}}/css/color.css">
     <link rel="stylesheet" href="{{asset('/front/')}}/css/responsive.css">
-
+    @yield('css')
 </head>
 <body>
 <!--<div class="se-pre-con"></div>-->

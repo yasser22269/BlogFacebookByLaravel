@@ -19,6 +19,7 @@ Route::group(['middleware' => ['auth']], function() {
     * Logout Route
     */
     Route::get('/logoutWeb', [App\Http\Controllers\HomeController::class, 'logoutWeb'])->name('logoutWeb');
+    Route::get('/{user_name}', [App\Http\Controllers\profileController::class, 'index'])->name('profile.index');
 
  });
 
